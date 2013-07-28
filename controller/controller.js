@@ -59,8 +59,12 @@ var app = {
 
         scanner.scan(
             function (result) {
-                app.buscarLibro(result.text);
-                $.mobile.changePage( '#newSolicitudPag', { transition: "slide"} );
+                //app.buscarLibro(result.text);
+                //$.mobile.changePage( '#newSolicitudPag', { transition: "slide"} );
+                alert("Scanner result: \n" +
+                    "text: " + result.text + "\n" +
+                    "format: " + result.format + "\n" +
+                    "cancelled: " + result.cancelled + "\n");
             }, 
             function (error) {
                 alert("Error al escanear el Libro: " + error);
