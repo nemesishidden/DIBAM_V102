@@ -60,11 +60,6 @@ var app = {
         scanner.scan(
             function (result) {
                 app.buscarLibro(result.text);
-                //$.mobile.changePage( '#newSolicitudPag', { transition: "slide"} );
-                // alert("Scanner result: \n" +
-                //     "text: " + result.text + "\n" +
-                //     "format: " + result.format + "\n" +
-                //     "cancelled: " + result.cancelled + "\n");
             }, 
             function (error) {
                 alert("Error al escanear el Libro: " + error);
@@ -79,7 +74,6 @@ var app = {
             url: 'http://dibam-sel.opensoft.cl/usuario.asp',
             type: 'GET',
             dataType: 'json',
-            data: JSON.stringify($("#formLogin"). serializeArray()),
             error : function (){ document.title='error'; }, 
             success: function (data) {
                 if(data.success){
@@ -99,7 +93,7 @@ var app = {
                     }else{
                         alert('Usted no se encuentra registrado.');
                     }       
-                }
+                }               
             }
         });
     },
@@ -135,8 +129,7 @@ var app = {
 
     buscarLibro: function(codigoIsbn){
         $.ajax({
-            //url: 'data/libro.json',
-            url: 'http://dibam-sel.opensoft.cl/libro.asp',
+            url: 'data/libro.json',
             type: 'POST',
             dataType: 'json',
             error : function (){ document.title='error'; }, 
