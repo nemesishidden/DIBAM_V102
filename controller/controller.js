@@ -74,6 +74,7 @@ var app = {
             url: 'http://dibam-sel.opensoft.cl/usuario.asp',
             type: 'GET',
             dataType: 'json',
+            data: JSON.stringify($("#formLogin"). serializeArray()),
             error : function (){ document.title='error'; }, 
             success: function (data) {
                 if(data.success){
