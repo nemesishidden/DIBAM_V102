@@ -125,7 +125,7 @@ var baseDatos = {
                 document.getElementById('presupuestoValidoHasta').innerHTML = r.fechaValido
                 document.getElementById('presupuestoDisponible').innerHTML = r.disponible
                 document.getElementById('presupuestoUtilizado').innerHTML = r.utilizado;
-
+                
                 document.getElementById('presupuestoValidoHastaDos').innerHTML = r.fechaValido
                 document.getElementById('presupuestoDisponibleDos').innerHTML = r.disponible
                 document.getElementById('presupuestoUtilizadoDos').innerHTML = r.utilizado;
