@@ -55,6 +55,7 @@ var app = {
         // } catch (ex) {
         //     console.log(ex.message);
         // }
+        //$.mobile.changePage('#newSolicitudPag', {transition: "slide"});
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.scan(
@@ -130,7 +131,8 @@ var app = {
 
     buscarLibro: function(codigoIsbn){
         $.ajax({
-            url: 'data/libro.json',
+            //url: 'data/libro.json',
+            url: 'http://dibam-sel.opensoft.cl/libro.asp',
             type: 'POST',
             dataType: 'json',
             error : function (){ document.title='error'; }, 
@@ -143,7 +145,7 @@ var app = {
                             document.getElementById("autor").value = a.autor;
                             document.getElementById("precioReferencia").value = a.precioReferencia;
                         }else{
-                            //alert('El libro no se encuentra en nuestros registros, por favor agregar manualmente.');
+                            alert('El libro no se encuentra en nuestros registros, por favor agregar manualmente.');
                         }
                         $.mobile.changePage( '#newSolicitudPag', { transition: "slide"} );
                     });
