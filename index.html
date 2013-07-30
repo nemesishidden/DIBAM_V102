@@ -73,7 +73,7 @@
                 <div data-role="footer" data-position="fixed"  data-theme="a">
                     <div data-role="navbar" data-iconpos="top">
                         <ul>
-                            <li><a href="#login" data-rel="back" data-icon="back">Salir</a></li>
+                            <li><a href="#" data-rel="back" data-icon="back">Salir</a></li>
                             <li><a href="#inicio" data-icon="home">Home</a></li>
                             <!--<li><a href="#" data-icon="gear">Contacto</a></li>-->
                         </ul>
@@ -101,12 +101,12 @@
                         <input type="text" name="precioReferencia" id="precioReferencia" value="" placeholder="Precio Referencia"/><br />
                         
                         <label for="slider-mini">Cantidad de Libros:</label>
-                        <input type="range" name="slider-mini" id="cantidad" value="0" min="0" max="1000" data-highlight="true" data-mini="true" /><br />
+                        <input type="range" name="slider-mini" id="cantidad" value="0" min="0" max="200" data-highlight="true" data-mini="true" /><br />
                         
-                        <a href="" data-role="button" data-icon="search" data-iconpos="right">Foto</a><br />                   
+                        <!-- <a href="" data-role="button" data-icon="search" data-iconpos="right">Foto</a><br /> -->                   
                         <label for="basic" style="float:right;">Total: <span id="totalPresupuesto"></span></label><br /><br />
                         
-                        <a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="right">Seleccione Presupuesto</a><br />
+                        <!-- <a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="right">Seleccione Presupuesto</a><br /> -->
                         
                         <div data-role="navbar" data-iconpos="top">
                             <ul>
@@ -121,7 +121,7 @@
                 <div data-role="footer" data-position="fixed" class="ui-bar-a-footer">
                     <div data-role="navbar" data-iconpos="top">
                         <ul>
-                            <li><a href="#inicio" data-rel="back" data-icon="back">Volver</a></li>
+                            <li><a href="#" data-rel="back" data-icon="back">Volver</a></li>
                             <li><a href="#inicio" data-icon="home">Home</a></li>
                             <li><a href="#" data-icon="gear">Contacto</a></li>
                         </ul>
@@ -166,9 +166,9 @@
                 <div data-role="content"> 
                     <p>Seleccione: </p>  
                     <ul data-role="listview" data-inset="true">
-                        <li><a href="">Presupuesto Uno</a></li>
-                        <li><a href="">Presupuesto Dos</a></li>
-                        <li><a href="">Presupuesto Tres</a></li>
+                        <li><a href="#detalleSolicitud">Evento Uno</a></li>
+                        <li><a href="">Evento Dos</a></li>
+                        <li><a href="">Evento Tres</a></li>
                     </ul>
                 </div>
                 <div data-role="footer" data-position="fixed" class="ui-bar-a-footer">
@@ -194,10 +194,21 @@
                         </p>
                     </div>
                     <div>
-                        <p>Evento</p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <center><table id="tablaSolPorEnviar">
+                            <tr>
+                                <td><span class="clsEnunciado">Evento</span></td><td>:</td><td><span class="clsResultado">ss</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="clsEnunciado">Monto total</span></td><td>:</td><td><span class="clsResultado">ss</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="clsEnunciado">Fecha env&iacute;o</span></td><td>:</td><td><span class="clsResultado">ss</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="clsEnunciado">Estado</span></td><td>:</td><td><span class="clsResultado">ss</span></td>
+                            </tr>
+
+                        </table></center>
 
                     </div>
                 </div>
