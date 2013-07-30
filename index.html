@@ -19,15 +19,16 @@
                 </div> -->
                 <div data-role="content">
                     <center><img src="style/img/logo_snbp.jpg"></center>
-                    <form action="" method="POST" lang="es">
+                    <form action="" id="formLogin" method="POST" lang="es">
                         <label for="basic">Usuario:</label><br />
                         <input type="text" name="username" id="username" value="" placeholder="Usuario"/><br /><br />
                         <label for="basic">Contraseña:</label><br />
-                        <input type="text" name="pass" id="pass" value="" placeholder="Contraseña"/>
+                        <input type="password" name="pass" id="pass" value="" placeholder="Contraseña"/>
                         <center><input type="button" value="INGRESAR" id="logear" data-inline="true"/></center>
                     </form>
                     <center><img src="style/img/logo_dibam.jpg"></center>    
                 </div>
+                
 <!--                 <div data-role="footer" data-position="fixed">
                     <h4>Page Footer</h4>
                 </div> -->
@@ -72,9 +73,9 @@
                 <div data-role="footer" data-position="fixed"  data-theme="a">
                     <div data-role="navbar" data-iconpos="top">
                         <ul>
-                            <li><a href="#login" data-icon="back">Salir</a></li>
+                            <li><a href="" data-rel="back" data-icon="back">Salir</a></li>
                             <li><a href="#inicio" data-icon="home">Home</a></li>
-                            <li><a href="#" data-icon="gear">Contacto</a></li>
+                            <!--<li><a href="#" data-icon="gear">Contacto</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -100,12 +101,12 @@
                         <input type="text" name="precioReferencia" id="precioReferencia" value="" placeholder="Precio Referencia"/><br />
                         
                         <label for="slider-mini">Cantidad de Libros:</label>
-                        <input type="range" name="slider-mini" id="cantidad" value="0" min="0" max="1000" data-highlight="true" data-mini="true" /><br />
+                        <input type="range" name="slider-mini" id="cantidad" value="0" min="0" max="200" data-highlight="true" data-mini="true" /><br />
                         
-                        <a href="" data-role="button" data-icon="search" data-iconpos="right">Foto</a><br />                   
+                        <!-- <a href="" data-role="button" data-icon="search" data-iconpos="right">Foto</a><br /> -->                   
                         <label for="basic" style="float:right;">Total: <span id="totalPresupuesto"></span></label><br /><br />
                         
-                        <a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="right">Seleccione Presupuesto</a><br />
+                        <!-- <a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="right">Seleccione Presupuesto</a><br /> -->
                         
                         <div data-role="navbar" data-iconpos="top">
                             <ul>
@@ -120,9 +121,9 @@
                 <div data-role="footer" data-position="fixed" class="ui-bar-a-footer">
                     <div data-role="navbar" data-iconpos="top">
                         <ul>
-                            <li><a href="#inicio" data-icon="back">Volver</a></li>
+                            <li><a href="" data-rel="back" data-icon="back">Volver</a></li>
                             <li><a href="#inicio" data-icon="home">Home</a></li>
-                            <li><a href="#" data-icon="gear">Contacto</a></li>
+                            <li><a href="" data-icon="gear">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -137,8 +138,8 @@
                 <div data-role="content" style="padding: 0px;">   
                     <div class="divResumen">
                         <p class="resumen">
-                            Presupuesto Valido Hasta: <span id="presupuestoValidoHasta"></span> <br />
-                            Disponible: <span id="presupuestoDisponible"></span> / Utilizado: <span id="presupuestoUtilizado"></span>
+                            Presupuesto Valido Hasta: <span id="presupuestoValidoHastaDos"></span> <br />
+                            Disponible: <span id="presupuestoDisponibleDos"></span> / Utilizado: <span id="presupuestoUtilizadoDos"></span>
                         </p>
                     </div>      
                     <form action="" method="get" lang="es">
@@ -149,7 +150,7 @@
                 <div data-role="footer" data-position="fixed" class="ui-bar-a-footer">
                     <div data-role="navbar" data-iconpos="top">
                         <ul>
-                            <li><a href="#inicio" data-icon="back">Volver</a></li>
+                            <li><a href="#inicio" data-rel="back" data-icon="back">Volver</a></li>
                             <li><a href="#inicio" data-icon="home">Home</a></li>
                             <li><a href="#" data-icon="gear">Contacto</a></li>
                         </ul>
@@ -165,15 +166,15 @@
                 <div data-role="content"> 
                     <p>Seleccione: </p>  
                     <ul data-role="listview" data-inset="true">
-                        <li><a href="">Presupuesto Uno</a></li>
-                        <li><a href="">Presupuesto Dos</a></li>
-                        <li><a href="">Presupuesto Tres</a></li>
+                        <li><a href="">Evento Uno</a></li>
+                        <li><a href="">Evento Dos</a></li>
+                        <li><a href="">Evento Tres</a></li>
                     </ul>
                 </div>
                 <div data-role="footer" data-position="fixed" class="ui-bar-a-footer">
                     <div data-role="navbar" data-iconpos="top">
                         <ul>
-                            <li><a href="#inicio" data-icon="back">Volver</a></li>
+                            <li><a href="#inicio" data-rel="back" data-icon="back">Volver</a></li>
                             <li><a href="#inicio" data-icon="home">Home</a></li>
                             <li><a href="#" data-icon="gear">Contacto</a></li>
                         </ul>
@@ -203,7 +204,7 @@
                 <div data-role="footer" data-position="fixed" class="ui-bar-a-footer">
                     <div data-role="navbar" data-iconpos="top">
                         <ul>
-                            <li><a href="#inicio" data-icon="back">Volver</a></li>
+                            <li><a href="#inicio" data-rel="back" data-icon="back">Volver</a></li>
                             <li><a href="#inicio" data-icon="home">Home</a></li>
                             <li><a href="#" data-icon="gear">Contacto</a></li>
                         </ul>

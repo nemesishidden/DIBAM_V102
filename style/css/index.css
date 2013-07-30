@@ -123,9 +123,7 @@ h1 {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.label-sol{
-    font-size: 11px;
-}
+
 .resumen{
     font-family: Arial;
     font-size: 14px;
@@ -140,3 +138,24 @@ h1 {
     text-align: center;
     padding: 5% 0 5% 0;
 }
+
+.label-sol{
+    font-size: 14px;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.label-precio{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #A04700;
+    margin-top: -10px;
+}
+
+.label-cantidad{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #A04700;
+    margin-top: -10px;
+}
+
